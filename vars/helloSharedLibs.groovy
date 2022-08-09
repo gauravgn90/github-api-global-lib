@@ -1,3 +1,3 @@
-def call(String name, String dow) {
-  sh "echo Hello ${name} Today is ${dow}"
+def call(Map config = [:]) {
+  sh "echo Hello ${config.name} Today is ${config.dow}"
 }
